@@ -1,0 +1,78 @@
+21:50:29.850 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@736caf7a: startup date [Wed Oct 10 21:50:29 CST 2018]; root of context hierarchy
+21:50:30.138 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+21:50:30.154 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+21:50:30.208 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4ac90509] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:50:31.670 [main] INFO  c.nzy.eureka.book.ProductApplication - No active profile set, falling back to default profiles: default
+21:50:31.688 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59942b48: startup date [Wed Oct 10 21:50:31 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@736caf7a
+21:50:32.363 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3dc89867-ea45-3d14-b0b8-46ab24f8bbc8
+21:50:32.381 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+21:50:32.444 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4ac90509] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:50:32.452 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2eaf020c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:50:32.854 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8082 (http)
+21:50:32.867 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+21:50:32.878 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:50:32.878 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+21:50:32.995 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:50:32.995 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1307 ms
+21:50:33.123 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+21:50:33.127 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+21:50:33.127 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+21:50:33.127 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+21:50:33.127 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+21:50:34.810 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+21:50:34.993 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+21:50:34.993 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:50:34.998 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+21:50:34.998 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:50:35.143 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59942b48: startup date [Wed Oct 10 21:50:31 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@736caf7a
+21:50:35.202 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/get],methods=[GET]}" onto public com.nzy.book.product.domain.Product com.nzy.eureka.book.product.facade.ProductFacadeImpl.getProduct(java.lang.Integer)
+21:50:35.203 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/findAllProduct],methods=[GET]}" onto public java.util.List<com.nzy.book.product.domain.Product> com.nzy.eureka.book.product.facade.ProductFacadeImpl.getProduct()
+21:50:35.203 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/add],methods=[POST],consumes=[application/json]}" onto public com.nzy.book.product.domain.Product com.nzy.eureka.book.product.facade.ProductFacadeImpl.addProduct(com.nzy.book.product.domain.Product)
+21:50:35.204 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/get1],methods=[GET],consumes=[application/json]}" onto public com.nzy.book.product.domain.Product com.nzy.eureka.book.product.facade.ProductFacadeImpl.getProduct1(com.nzy.book.product.domain.Product)
+21:50:35.204 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/list],methods=[GET]}" onto public java.util.List<com.nzy.book.product.domain.Product> com.nzy.eureka.book.product.facade.ProductFacadeImpl.listProduct()
+21:50:35.204 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/get2],methods=[GET]}" onto public com.nzy.book.product.domain.Product com.nzy.eureka.book.product.facade.ProductFacadeImpl.getProduct2(java.lang.Integer,java.lang.String)
+21:50:35.207 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21:50:35.207 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21:50:35.233 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:50:35.234 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:50:35.264 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:50:35.614 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+21:50:35.619 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+21:50:35.620 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+21:50:35.621 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+21:50:35.623 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+21:50:35.634 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+21:50:35.643 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=59942b48,type=ConfigurationPropertiesRebinder]
+21:50:35.755 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+21:50:35.762 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+21:50:35.811 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+21:50:36.000 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+21:50:36.000 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+21:50:36.111 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+21:50:36.111 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+21:50:36.282 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:50:36.394 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+21:50:36.395 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+21:50:36.395 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+21:50:36.396 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+21:50:36.396 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+21:50:36.396 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+21:50:36.396 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+21:50:36.549 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+21:50:36.550 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 5
+21:50:36.553 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+21:50:36.556 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1539179436555 with initial instances count: 1
+21:50:36.584 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application e-book-product-core with eureka with status UP
+21:50:36.585 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1539179436585, current=UP, previous=STARTING]
+21:50:36.587 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_E-BOOK-PRODUCT-CORE/localhost:e-book-product-core:8082: registering service...
+21:50:36.597 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+21:50:36.614 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+21:50:36.624 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_E-BOOK-PRODUCT-CORE/localhost:e-book-product-core:8082 - registration status: 204
+21:50:36.629 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8082 (http)
+21:50:36.630 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+21:50:36.633 [main] INFO  c.nzy.eureka.book.ProductApplication - Started ProductApplication in 8.421 seconds (JVM running for 9.014)
+21:51:44.753 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+21:51:44.753 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+21:51:44.881 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 128 ms
+21:55:36.404 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:00:36.409 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
