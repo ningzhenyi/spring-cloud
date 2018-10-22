@@ -10,7 +10,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>zuul-gateway-filter-exception</artifactId>
-	<name>e-book-consumer-hystrix-ribbon-threadpool</name>
+	<name>zuul-gateway-filter-exception</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
